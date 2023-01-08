@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="language" content="english, en">
+    <meta name="author" content="Christian Scheub">
+    <title>Hello World</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</head>
+<body style="background-color:#eceff1">
+
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Hello World</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="seite1.htm">Link zu Seite1</a>
+        <a class="mdl-navigation__link" href="seite2.html">Link zu Seite2</a>
+        <a class="mdl-navigation__link" href="seite3.html">Link zu Seite3</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Hello World</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="seite1.htm">Link zu Seite1</a>
+      <a class="mdl-navigation__link" href="seite2.html">Link zu Seite2</a>
+      <a class="mdl-navigation__link" href="seite3.html">Link zu Seite3</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+	<!-- Your content goes here -->
+
+<h1 style="margin:50px;color: blue;text-align: center">Meine erste Homepage</h1>
+<p>An der DHBW habe ich heute etwas &uumlber Basics in HTML gelernt!</p>
+
+<p id="textToManipulate">HTML ist toll </p>
+
+
+<table border="1" class="mdl-data-table mdl-js-data-table mdl-shadow--2dp">
+<tr>
+<th class="mdl-data-table__cell--non-numeric"> Semester1</th>
+<th> Semester2 </th>
+<th> Semester3 </th>
+<th> Semester4 </th>
+</tr>
+<tr>
+<td class="mdl-data-table__cell--non-numeric"> Java Programmierung </td>
+<td> Java Programmierung </td>
+<td> PHP Programmierung </td>
+<td> Web Programmierung </td>
+</tr>
+</table>
+<br>
+
+<button id="testButton" onClick="test()">JS Aktion 1</button>
+
+<script>
+function test(){
+  document.getElementById("textToManipulate").innerHTML = "JavaScript rockt!";
+  document.getElementById("textToManipulate").style.paddingLeft = "200px";
+  alert("Mein erster Popup!");
+}
+ </script>
+    
+ 
+</div>
+  </main>
+</div>
+
+</body>
+</html>
